@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="display: inline-block; margin-left:-2%;float:left">
         <GmapMap
             :center="{lat:47.206054, lng:-1.539269}"
             :zoom="15"

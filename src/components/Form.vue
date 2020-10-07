@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="margin-left: 35%; z-index:1">
+    <div style="margin-left: 5%">
       <br>
       <label class="sr-only" for="inline-form-input-name">X</label>
       <b-input

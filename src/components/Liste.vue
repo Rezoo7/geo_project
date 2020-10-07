@@ -1,7 +1,7 @@
 <template>
-  <div style="margin-top: -45%;margin-left: 20%;z-index:2">
+  <div style="display: inline-block;width: 50%;margin-left: 5%;">
       <br><br>
-      <b-list-group style="margin-left: 45%;margin-top:15%">
+      <b-list-group>
         <b-list-group-item button v-for="truck in trucks" v-bind:key="truck.id" href="#some-link" class="w-75">
              {{ truck.foodTruck.name }} - {{ truck.distance }} m
         </b-list-group-item>
