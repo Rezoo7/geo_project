@@ -1,28 +1,49 @@
 <template>
   <div>
-      <b-form inline action="" style="margin-left: 35.3%">
-        <label class="sr-only" for="inline-form-input-name">X</label>
-        <b-input
+    <div style="margin-left: 42%">
+      <label class="sr-only" for="inline-form-input-name">X</label>
+      <b-input
           id="inline-form-input-name"
-          class="mb-2 mr-sm-2 mb-sm-0"
+          class="mb-2 mr-sm-2 mb-sm-0 w-25"
           placeholder="Coordonnées X"
-        ></b-input>
-
-        <label class="sr-only" for="inline-form-input-name">X</label>
-        <b-input
+          v-model="coordX"
+      ></b-input>
+      <br>
+      <label class="sr-only" for="inline-form-input-name">X</label>
+      <b-input
           id="inline-form-input-name"
-          class="mb-2 mr-sm-2 mb-sm-0"
+          class="mb-2 mr-sm-2 mb-sm-0 w-25    "
           placeholder="Coordonnées Y"
-        ></b-input>
-        
-        <br> <br>
-        <b-button type="submit"> Envoyer </b-button>
-      </b-form>
+          v-model="coordY"
+      ></b-input>   
+    </div>
+    
+    <br> <br>
+    <b-button type="submit" v-on:click="onSubmit"> Envoyer </b-button>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Form',
+
+  data : function() {
+    return {
+        coordX: null,
+        coordY: null
+    }
+  },    
+  methods : {
+    onSubmit() {
+        console.log(this.coordX)
+        console.log(this.coordY)
+
+        const coords = JSON.stringify({ "X" : this.coordX, "Y" : this.coordY })
+
+        console.log(coords)
+    }
+  }
+
 
 }
 </script>
