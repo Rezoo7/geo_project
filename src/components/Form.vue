@@ -39,7 +39,7 @@ export default {
         console.log(this.coordX)
         console.log(this.coordY)
 
-        const coords = JSON.stringify({ "x" : this.coordX, "y" : this.coordY })
+          const coords = JSON.stringify({ "x" : this.coordX, "y" : this.coordY })
 
         console.log(coords)
 
