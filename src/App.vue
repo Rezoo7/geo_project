@@ -2,16 +2,18 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <Form/>
+    <Googlemaps/>
   </div>
 </template>
 
 <script>
 import Form from './components/Form.vue'
+import Googlemaps from './components/Googlemaps'
 
 export default {
   name: 'App',
   components: {
-    Form
+    Form , Googlemaps
   }
 }
 </script>
