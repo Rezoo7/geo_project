@@ -1,16 +1,21 @@
 <template>
   <div id="app"> 
     <Form/> 
+    <br>
+    <Googlemaps/>
+    <Liste/>
   </div>
 </template>
 
 <script>
 import Form from './components/Form.vue'
+import Googlemaps from './components/Googlemaps'
+import Liste from './components/Liste'
 
 export default {
   name: 'App',
   components: {
-    Form
+    Form , Googlemaps, Liste
   }
 }
 </script>

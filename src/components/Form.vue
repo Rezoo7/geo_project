@@ -1,25 +1,26 @@
 <template>
   <div>
-    <div style="margin-left: 42%">
+    <div style="margin-left: 35%; z-index:1">
       <br>
       <label class="sr-only" for="inline-form-input-name">X</label>
       <b-input
           id="inline-form-input-name"
-          class="mb-2 mr-sm-2 mb-sm-0 w-25"
+          class="mb-2 mr-sm-2 mb-sm-0 w-50"
           placeholder="Coordonnées X"
-          v-model="coordX"
+          v-model="coordX"      
       ></b-input>
       <br> 
       <label class="sr-only" for="inline-form-input-name">X</label>
       <b-input
           id="inline-form-input-name"
-          class="mb-2 mr-sm-2 mb-sm-0 w-25    "
+          class="mb-2 mr-sm-2 mb-sm-0 w-50"
           placeholder="Coordonnées Y"
           v-model="coordY"
-      ></b-input>   
+      ></b-input>
+    
+      <br><br>
+      <b-button type="submit" v-on:click="onSubmit" style="margin-left:-55%"> Envoyer </b-button>
     </div>
-    <br> <br>
-    <b-button type="submit" v-on:click="onSubmit"> Envoyer </b-button>
   </div>
 </template>
 
