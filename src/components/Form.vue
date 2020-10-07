@@ -1,6 +1,7 @@
 <template>
   <div>
     <div style="margin-left: 42%">
+      <br>
       <label class="sr-only" for="inline-form-input-name">X</label>
       <b-input
           id="inline-form-input-name"
@@ -8,7 +9,7 @@
           placeholder="Coordonnées X"
           v-model="coordX"
       ></b-input>
-      <br>
+      <br> 
       <label class="sr-only" for="inline-form-input-name">X</label>
       <b-input
           id="inline-form-input-name"
@@ -17,7 +18,6 @@
           v-model="coordY"
       ></b-input>   
     </div>
-    
     <br> <br>
     <b-button type="submit" v-on:click="onSubmit"> Envoyer </b-button>
   </div>
@@ -46,6 +46,7 @@ export default {
         //Y Longitude : -1.7908880710601807
 
         
+
     }
   }
 

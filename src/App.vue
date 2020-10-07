@@ -1,7 +1,6 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Form/>
+  <div id="app"> 
+    <Form/> 
   </div>
 </template>
 
@@ -23,6 +22,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 10px;
+  background-image: url("./assets/background.png") ;
+  width: 100%;
+  height: 100vh;
 }
 </style>
